@@ -1,26 +1,23 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Navbar } from "./components/navbar/Navbar";
-import Header from "./components/header/header";
-import Gain from "./components/gain/Gain";
-import { WhyDzoma } from "./components/whyDzoma/WhyDzoma";
-import Download from "./components/download/download";
-import Testimony from "./components/testimonials/Testimony";
-import Faq from "./components/faq/Faq";
+
 import { Footer } from "./components/footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Faq from "./pages/faq/Faq";
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-red-500"></h1>
+    <BrowserRouter>
       <Navbar />
-      <Header />
-      <Gain />
-      <WhyDzoma />
-      <Download />
-      <Testimony />
-      <Faq />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<Faq />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

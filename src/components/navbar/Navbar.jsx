@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CgMenuRound } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,58 +9,59 @@ export const Navbar = () => {
     <div class="bg-dzoma-blue-black z-[999]">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label="Company"
             title="Company"
             class="inline-flex items-center"
           >
             <img src="/images/logo.png" className="w-48" alt="" />
-          </a>
+          </Link>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/about"
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About US
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/faq"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 FAQs
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/driver"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Become a Driver
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="/"
+                target="_blank"
+                href="https://play.google.com/"
                 class="border border-dzoma-yellow inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
                 Download Dzomo
@@ -80,14 +82,14 @@ export const Navbar = () => {
                 <div class="p-5 bg-white border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
+                      <Link
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         class="inline-flex items-center"
                       >
                         <img src="/images/logo1.png" className="w-48" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -108,52 +110,53 @@ export const Navbar = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/about"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/faq"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           FAQs
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/driver"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Become a Driver
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          href="https://play.google.com/"
+                          target="_blank"
                           class="border border-dzoma-blue-black inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-dzoma-blue-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
                           Download Dzoma
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
-    <div className=" px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className=" bg-dzoma-blue-black rounded-lg px-4 pt-16 w-screen md:px-24 lg:px-8">
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
         <div className="md:max-w-md lg:col-span-2">
           <a
@@ -12,64 +14,68 @@ export const Footer = () => {
             <img src="/images/logo.png" alt="" className="w-40" />
           </a>
           <div className="mt-4 lg:max-w-sm">
-            <p className="text-sm text-gray-800">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            <p className="text-2xl font-bold text-white">
+              Your plug for bulk delivery
             </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Company</p>
+            <p className="font-semibold tracking-wide text-dzoma-yellow">
+              Company
+            </p>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                <Link
+                  to="/"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                <Link
+                  to="/about"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                <Link
+                  to="/contact"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Support</p>
+            <p className="font-semibold tracking-wide text-dzoma-yellow">
+              Support
+            </p>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                <Link
+                  to="/faq"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">
+            <p className="font-semibold tracking-wide text-dzoma-yellow">
               Solutions
             </p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  target="_blank"
+                  href="https://play.google.com/"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   dzoma app
                 </a>
@@ -77,22 +83,24 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Drivers</p>
+            <p className="font-semibold tracking-wide text-dzoma-yellow">
+              Drivers
+            </p>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                <Link
+                  to="/driver"
+                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Register as a driver
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-white">
           © Copyright 2022 Dzoma. All rights reserved.
         </p>
         <div className="flex items-center mt-4 space-x-4 sm:mt-0">

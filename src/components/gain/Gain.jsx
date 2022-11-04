@@ -15,7 +15,7 @@ const Gain = () => {
           <span className="text-2xl  font-bold">fast and reliable</span>{" "}
           delivery vans, when and where you need it.
         </p>
-        <button className="bg-dzoma-yellow text-dzoma-red font-bold rounded-lg px-6 py-2 my-3">
+        <button className="bg-dzoma-yellow hidden lg:block md:block text-dzoma-red font-bold rounded-lg px-6 py-2 my-3">
           Start Now
         </button>
       </div>
@@ -32,6 +32,9 @@ const Gain = () => {
         <div className="lg:ml-24">
           <GainCard img={"/images/gain/industry.png"} text="Track and pay" />
         </div>
+        <button className="lg:hidden md:hidden sm:hidden bg-dzoma-yellow text-dzoma-red font-bold rounded-lg px-6 py-2 my-3">
+          Start Now
+        </button>
       </div>
     </div>
   );

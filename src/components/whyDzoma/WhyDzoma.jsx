@@ -26,7 +26,7 @@ export const WhyDzoma = () => {
                 data-aos-delay={`${index > 0 ? 200 * index : 0}`}
                 data-aos-duration="1000"
               >
-                <WhyDzomaCard key={index} WhyDzoma={data} />;
+                <WhyDzomaCard key={index} WhyDzoma={data} />
               </div>
             );
           })}
