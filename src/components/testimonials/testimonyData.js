@@ -2,16 +2,16 @@ export const testimonyData = [
   {
     id: 1,
     avatar: "/images/testimonial/img1.jpg",
-    name: "Kofi Takyi",
+    name: "Esi SIka",
     testimony:
-      " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters ",
+      " I love the fact that, I was able to easily transport my items without hussle ",
   },
 
   {
     id: 2,
     avatar: "/images/testimonial/img2.jpg",
-    name: "Jane Tsikata",
+    name: "Ama Turkson",
     testimony:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+      "The drivers are very professional and they always deliver on time",
   },
 ];
