@@ -10,11 +10,20 @@ const Testimony = () => {
     <section className="mx-auto max-w-7xl py-8 md:pb-16 md:pt-10 px-4">
       <div className="pb-8 sm:pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center">
-          Our Customers love Dzoma
+          Our customers love <br className="hidden sm:block" /> Dzoma
         </h1>
       </div>
 
       <div className="w-full flex items-center flex-wrap py-8 md:pt-10 sm:px-6 lg:px-8">
+        <div className="w-full sm:w-2/5 md:w-1/2 pb-4 sm:py-12 md:py-16 lg:py-20 xl:pb-28 md:pl-10">
+          <h1
+            className="text-center sm:text-left text-2xl md:text-3xl font-bold leading-snug"
+            // data-aos="fade-right" data-aos-duration="1000"
+          >
+            Don't just take our word for it Read reviews from our customers
+          </h1>
+        </div>
+
         <div className="w-full sm:w-3/5 md:w-1/2 relative pr-6 sm:pr-8 lg:pr-20">
           <Slider
             dots={false}

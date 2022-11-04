@@ -6,6 +6,8 @@ import Gain from "./components/gain/Gain";
 import { WhyDzoma } from "./components/whyDzoma/WhyDzoma";
 import Download from "./components/download/download";
 import Testimony from "./components/testimonials/Testimony";
+import Faq from "./components/faq/Faq";
+import { Footer } from "./components/footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,8 @@ function App() {
       <WhyDzoma />
       <Download />
       <Testimony />
+      <Faq />
+      <Footer />
     </div>
   );
 }
