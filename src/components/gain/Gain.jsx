@@ -21,16 +21,13 @@ const Gain = () => {
       </div>
       <div className="  lg:mr-32 flex flex-col gap-10 justify-center items-center">
         <div className="lg:ml-24">
-          <GainCard
-            img={"/images/gain/connect.png"}
-            text="Schedule on app or dial *235# or call 0542879063"
-          />
+          <GainCard img={"/images/gain/connect.png"} text="Schedule on app " />
         </div>
         <div className=" flex-1">
-          <GainCard img={"/images/gain/sell.png"} text="Items are loaded" />
+          <GainCard img={"/images/gain/sell.svg"} text="Items are loaded" />
         </div>
         <div className="lg:ml-24">
-          <GainCard img={"/images/gain/industry.png"} text="Track and pay" />
+          <GainCard img={"/images/gain/pay.svg"} text="Track and pay" />
         </div>
         <button className="lg:hidden md:hidden sm:hidden bg-dzoma-yellow text-dzoma-red font-bold rounded-lg px-6 py-2 my-3">
           Start Now

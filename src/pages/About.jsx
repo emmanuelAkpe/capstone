@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Team } from "../components/team/Team";
+import { Tabs } from "../components/tabs/Tabs";
+import ReactReadMoreReadLess from "react-read-more-read-less";
 
 const About = () => {
   useEffect(() => {
@@ -27,21 +30,41 @@ const About = () => {
               </h1>
 
               <p className="py-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Dzoma is here to serve you. our drivers/riders are professionals
-                and we have thoroughly checked their backgrounds. Our network of
-                more than 100 box trucks, cargo vans, pickup trucks are
-                available to help you the same day or you can schedule in
-                advance.
+                <ReactReadMoreReadLess
+                  charLimit={200}
+                  readMoreText={"Read more ▼"}
+                  readLessText={"Read less ▲"}
+                  readLessClassName="readmore"
+                  readMoreClassName="readmore"
+                >
+                  Dzoma helps businesses to transport their bulk purchases
+                  within minutes. We have built a technology that connects
+                  customers with a vast network of drivers who sign up to offer
+                  their delivery services. The project was born with the aim of
+                  transforming the way businesses transport their bulk products
+                  from their suppliers. At Dzoma we want to give businesses easy
+                  access to anything in their city, whilst having a sustainable
+                  impact on the economy, society and the environment: we’re a
+                  tech-first, responsible company.
+                </ReactReadMoreReadLess>
               </p>
 
               <div className="py-6 sm:py-8"></div>
             </div>
             <div className="w-full sm:w-1/2 px-4 sm:px-6 md:px-8 lg:px-16">
-              <img src="/images/about/hero.png" alt="" />
+              <img
+                src="/images/about/hero.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              />
             </div>
           </div>
         </main>
       </div>
+      <Tabs />
+      <Team />
     </div>
   );
 };
