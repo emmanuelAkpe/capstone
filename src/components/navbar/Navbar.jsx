@@ -55,7 +55,7 @@ export const Navbar = () => {
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Become a Driver
+                Become a Transporter{" "}
               </Link>
             </li>
             <li>
@@ -112,8 +112,7 @@ export const Navbar = () => {
                       <li>
                         <Link
                           to="/"
-                          aria-label="Our product"
-                          title="Our product"
+                          onClick={() => setIsMenuOpen(false)}
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
@@ -122,8 +121,7 @@ export const Navbar = () => {
                       <li>
                         <Link
                           to="/about"
-                          aria-label="Our product"
-                          title="Our product"
+                          onClick={() => setIsMenuOpen(false)}
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About Us
@@ -132,8 +130,7 @@ export const Navbar = () => {
                       <li>
                         <Link
                           to="/faq"
-                          aria-label="Our product"
-                          title="Our product"
+                          onClick={() => setIsMenuOpen(false)}
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           FAQs
@@ -142,17 +139,17 @@ export const Navbar = () => {
                       <li>
                         <Link
                           to="/driver"
-                          aria-label="Our product"
-                          title="Our product"
+                          onClick={() => setIsMenuOpen(false)}
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Become a Driver
+                          Become a Transporter
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="https://play.google.com/"
                           target="_blank"
+                          onClick={() => setIsMenuOpen(false)}
                           class="border border-dzoma-blue-black inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-dzoma-blue-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
                           Download Dzoma

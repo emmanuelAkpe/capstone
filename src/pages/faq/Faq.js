@@ -5,7 +5,7 @@ import { questions } from "./data";
 
 const Faq = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:mt-6 mt-3">
+    <div className="max-w-7xl mx-auto lg:mt-6 mt-3 drive">
       <div className="w-full pb-4 sm:pb-10 md:pb-12 lg:pb-16 px-4 sm:pl-10 md:pl-12 lg:pl-16">
         <div className="pb-5 md:pb-10">
           <h2 className="text-3xl md:text-5xl lg:text-6xl tracking-tight font-extrabold text-dzoma-blue-black">

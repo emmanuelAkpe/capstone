@@ -8,7 +8,7 @@ export const WhyDzoma = () => {
     AOS.init({ once: true });
   }, []);
   return (
-    <div className="flex items-center justify-center flex-col">
+    <div className="flex items-center justify-center flex-col drive">
       <div className="flex flex-col items-center justify-center mt-5">
         <h1 className="lg:text-5xl text-3xl font-bold text-dzoma-blue-black  p-3">
           choose Dzoma!

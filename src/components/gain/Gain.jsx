@@ -3,7 +3,7 @@ import GainCard from "./GainCard";
 
 const Gain = () => {
   return (
-    <div className="flex flex-col py-5 lg:flex-row mx-5 mt-5 items-center justify-center bg-dzoma-blue-black  rounded-3xl lg:p-5  ">
+    <div className="flex flex-col py-5 lg:flex-row mx-5 mt-5 items-center justify-center bg-dzoma-blue-black   rounded-3xl lg:p-5  ">
       <div className="flex-1 px-10 lg:ml-20">
         <h1 className="lg:text-5xl text-3xl font-bold text-dzoma-yellow p-3">
           How Dzoma works
