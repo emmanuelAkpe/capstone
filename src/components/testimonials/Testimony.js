@@ -20,7 +20,8 @@ const Testimony = () => {
             className="text-center sm:text-left text-2xl md:text-3xl font-bold leading-snug"
             // data-aos="fade-right" data-aos-duration="1000"
           >
-            Don't just take our word for it Read reviews from our customers
+            Don't just take our word for it.
+            <br /> Read reviews from our customers
           </h1>
         </div>
 
@@ -56,7 +57,7 @@ const Testimony = () => {
               className="p-3 md:p-4 rounded-full hover:bg-gray-100 cursor-pointer"
               onClick={() => sliderRef.current.slickPrev()}
             >
-              <FcExpand className="text-oya-ghana-black" />
+              <FcExpand className="text-dzoma-blue-black" />
             </div>
           </div>
         </div>

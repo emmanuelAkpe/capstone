@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import { Driver } from "../components/driver/Driver";
 import RegisterDriver from "../components/register/RegisterDriver";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const DriverPage = () => {
   useEffect(() => {
@@ -32,7 +31,7 @@ const DriverPage = () => {
               <div className="py-6 sm:py-8"></div>
             </div>
             <div className="w-full sm:w-1/2 px-4 sm:px-6 md:px-8 lg:px-16">
-              <LazyLoadImage src="/images/driver/driver.jpg" />
+              <img src="/images/driver/driver.jpg" />
             </div>
           </div>
         </main>

@@ -1,13 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
+import GetStartedModal from "../getStartedModal/GetStartedModal";
 
 const Header = () => {
+  const [show, setshow] = useState(false);
+  const closeModal = () => {
+    setshow(!show);
+  };
+
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
 
   return (
     <div className="relative bg-white">
+      <GetStartedModal modalVisible={show} closeModal={closeModal} />
       <div className="max-w-7xl mx-auto">
         <main className="mx-auto max-w-7xl mb-8 sm:mb-12 md:mb-16">
           <div className="flex items-center justify-center flex-wrap">
@@ -28,16 +35,13 @@ const Header = () => {
 
               <p className="py-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Dzoma helps you to transport your bulk items to your shop or
-                home with ease at affordable rate at your own convenience. our
-                drivers are professionals and we have thoroughly checked their
-                backgrounds. Our network of more than 100 box trucks, cargo
-                vans, pickup trucks are available to help you the same day or
-                you can schedule in advance.
+                home with ease at affordable rate at your own convenience.
               </p>
 
               <div className="py-6 sm:py-8">
                 <a
                   href="#"
+                  onClick={() => setshow(true)}
                   className="px-6 py-3 text-base font-medium  border border-dzoma-yellow bg-dzoma-blue-black text-dzoma-yellow  md:py-4 md:text-lg md:px-10 rounded-md shadow"
                 >
                   Get Started

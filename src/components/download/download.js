@@ -15,6 +15,8 @@ const Download = () => {
           <div className="flex items-center justify-start mt-5 sm:mt-8 font-medium space-x-4 md:space-x-2">
             <a
               href="https://apple.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-green-600 hover:text-green-500"
             >
               <img
@@ -24,6 +26,8 @@ const Download = () => {
               />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://android.com"
               className="text-green-600 hover:text-green-500"
             >

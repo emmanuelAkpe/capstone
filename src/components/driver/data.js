@@ -1,17 +1,17 @@
 export const Values = [
   {
     img: "/images/driver/money.svg",
-    title: "Best Prices",
+    title: "Best prices",
     desc: "We aim to offer the best delivery prices. See for yourself!",
   },
   {
     img: "/images/driver/pay.svg",
-    title: "Get Paid Fast",
-    desc: "Every week is payday on Dzoma. Plus, with Instant Pay, you can cash out up to 5 times a day.",
+    title: "Get paid fast",
+    desc: "Every week is payday on Dzoma. ",
   },
   {
     img: "/images/driver/time.svg",
-    title: "Flexible Hours",
+    title: "Flexible hours",
     desc: "You're in charge. start and stop working when you want",
   },
   {
@@ -26,7 +26,7 @@ export const Values = [
   },
   {
     img: "/images/driver/support.svg",
-    title: " support at every turn",
-    desc: " Ask about background checks, weekly promotions, how to get paid, and much more.",
+    title: " Support at every turn",
+    desc: " We are always available to help you with your needs.",
   },
 ];

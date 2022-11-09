@@ -35,7 +35,7 @@ export const Navbar = () => {
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                About US
+                About Us
               </Link>
             </li>
             <li>

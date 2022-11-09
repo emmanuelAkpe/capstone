@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import DriverRegisterModal from "../modal/DriverRegisterModal";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const RegisterDriver = () => {
   const [show, setshow] = useState(false);
@@ -14,7 +12,7 @@ const RegisterDriver = () => {
       <DriverRegisterModal modalVisible={show} closeModal={closeModal} />
       <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
         <div className="relative lg:w-1/2">
-          <LazyLoadImage
+          <img
             src="/images/driver/register.jpg"
             alt=""
             className="object-cover w-full lg:absolute h-80 lg:h-full"

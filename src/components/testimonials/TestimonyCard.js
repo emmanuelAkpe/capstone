@@ -13,6 +13,7 @@ const TestimonyCard = ({ testimony }) => {
       <small className="w-full pt-3 text-gray-400 font-bold">
         {testimony.name}
       </small>
+      <small className="w-full text-gray-400 font-bold">{testimony.post}</small>
     </div>
   );
 };

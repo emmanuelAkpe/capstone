@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
-const DriverRegisterModal = ({ modalVisible, closeModal }) => {
+const GetStartedModal = ({ modalVisible, closeModal }) => {
   if (!modalVisible) return null;
   return (
     <div className=" m-auto z-50 fixed inset-0 bg-black  bg-opacity-20 backdrop-blur-sm flex justify-center items-center ">
@@ -10,8 +10,7 @@ const DriverRegisterModal = ({ modalVisible, closeModal }) => {
           <div className="flex items-center justify-center flex-col">
             <img src="/images/logo1.png" alt="" className="w-40" />
             <h5 className="text-gray-500   font-bold">
-              Dzoma makes it easy for you to earn more with your vehicles or
-              tricycles.
+              Dzoma makes it easy for you to transport your bulk purchases.
             </h5>
           </div>
           <AiOutlineClose
@@ -55,4 +54,4 @@ const DriverRegisterModal = ({ modalVisible, closeModal }) => {
   );
 };
 
-export default DriverRegisterModal;
+export default GetStartedModal;

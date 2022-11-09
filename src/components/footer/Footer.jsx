@@ -1,8 +1,15 @@
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ContactModal from "../contactModal/ContactModal";
 
 export const Footer = () => {
+  const [show, setshow] = useState(false);
+  const closeModal = () => {
+    setshow(!show);
+  };
   return (
     <div className=" bg-dzoma-blue-black rounded-lg px-4 pt-16 w-screen md:px-24 lg:px-8">
+      <ContactModal modalVisible={show} closeModal={closeModal} />
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
         <div className="md:max-w-md lg:col-span-2">
           <a
@@ -41,11 +48,8 @@ export const Footer = () => {
                   About
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
+              <li onClick={() => setshow(true)}>
+                <Link className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
                   Contact
                 </Link>
               </li>

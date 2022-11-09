@@ -43,7 +43,7 @@ const About = () => {
                   their delivery services. The project was born with the aim of
                   transforming the way businesses transport their bulk products
                   from their suppliers. At Dzoma we want to give businesses easy
-                  access to anything in their city, whilst having a sustainable
+                  access to suppliers in their city, whilst having a sustainable
                   impact on the economy, society and the environment: we’re a
                   tech-first, responsible company.
                 </ReactReadMoreReadLess>

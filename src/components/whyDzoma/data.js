@@ -17,12 +17,13 @@ export const whydzomaData = [
   {
     img: "/images/whydzoma/ease.svg",
     title: "Convenience",
-    desc: "Our technology makes it easier than ever to book, track, communicate & pay. Request a Delivery Professional in one minute. ",
+
+    desc: "Our technology makes it easier  to book, track, communicate & pay. Request a Delivery Professional in one minute. ",
   },
   {
     img: "/images/whydzoma/team.svg",
     title: "Profesionals",
-    desc: "Our technology makes it easier than ever to book, track, communicate & pay. Request a Delivery Professional in one minute. ",
+    desc: "We have a newtowrk of well behaved professionals who are guided by the dzoma standards. ",
   },
   {
     img: "/images/whydzoma/review.svg",
